@@ -397,10 +397,10 @@ var mql = window.matchMedia("screen and (min-width: 60em)");
 window.onload = function() {
     var a = document.getElementById("mytemplate");
     if (a == null) {
-        window.location.href = "https://www.facebook.com/cmd368"
+        window.location.href = "https://cmd368tips.com"
     };
-    a.setAttribute("href", "https://www.facebook.com/cmd368");
+    a.setAttribute("href", "https://cmd368tips.com");
     a.setAttribute("ref", "nofollow");
-    a.setAttribute("title", "cmd368");
+    a.setAttribute("title", "nha cai cmd368");
     a.innerHTML = "cmd368"
 }
