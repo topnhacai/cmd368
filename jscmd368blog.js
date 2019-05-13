@@ -1,4 +1,8 @@
 // Plugin: SelectNav.js ~ url: https://github.com/lukaszfiszer/selectnav.js
+
+
+
+
 window.selectnav = function() {
     "use strict";
     var e = function(e, t) {
@@ -10,14 +14,17 @@ window.selectnav = function() {
             if (t.nodeType === 3) t = t.parentNode;
             if (t.value) window.location.href = t.value
         }
+
         function h(e) {
             var t = e.nodeName.toLowerCase();
             return t === "ul" || t === "ol"
         }
+
         function p(e) {
             for (var t = 1; document.getElementById("selectnav" + t); t++);
             return e ? "selectnav" + t : "selectnav" + (t - 1)
         }
+
         function d(e) {
             a++;
             var t = e.children.length,
@@ -246,6 +253,7 @@ $(document).ready(function(m) {
             _0x7d05x10 = a.find(".related-tag").attr("data-label");
         _0x7d05x32(a, "related-posts", 3, _0x7d05x10)
     });
+
     function _0x7d05x1d(a, b, c) {
         for (var d = 0; d < a[b].link.length; d++) {
             if (a[b].link[d].rel == "alternate") {
@@ -255,16 +263,19 @@ $(document).ready(function(m) {
         };
         return c
     }
+
     function _0x7d05x22(a, b, c) {
         var d = a[b].title["$t"],
             _0x7d05x25 = "<a href=\"" + c + "\">" + d + "</a>";
         return _0x7d05x25
     }
+
     function _0x7d05x26(a, b) {
         var c = a[b].author[0].name["$t"],
             _0x7d05x25 = "<span class=\"item-author\">" + c + "</span>";
         return _0x7d05x25
     }
+
     function _0x7d05x28(a, b) {
         var c = a[b].published["$t"];
         var d = c.substring(0, 4),
@@ -274,6 +285,7 @@ $(document).ready(function(m) {
             _0x7d05x25 = "<span class=\"item-date\">" + _0x7d05x2c + "</span>";
         return _0x7d05x25
     }
+
     function _0x7d05x2d(a, b) {
         var c = a[b].title["$t"],
             _0x7d05x6 = a[b].content["$t"],
@@ -293,12 +305,14 @@ $(document).ready(function(m) {
         var e = "<img class=\"ty-thumb\" alt=\"" + c + "\" src=\"" + d + "\"/>";
         return e
     }
+
     function _0x7d05x30(a, b) {
         var c = a[b].content["$t"],
             _0x7d05x2e = m("<div>").html(c),
             _0x7d05x31 = _0x7d05x2e.text();
         return _0x7d05x31
     }
+
     function _0x7d05x32(h, i, j, k) {
         var l = "";
         if (i.match("mega") || i.match("featured") || i.match("recent-posts") || i.match("post-tag") || i.match("related-posts")) {
@@ -383,10 +397,10 @@ var mql = window.matchMedia("screen and (min-width: 60em)");
 window.onload = function() {
     var a = document.getElementById("mytemplate");
     if (a == null) {
-        window.location.href = "https://cmd368tips.com"
+        window.location.href = "https://www.facebook.com/cmd368"
     };
-    a.setAttribute("href", "https://cmd368tips.com");
+    a.setAttribute("href", "https://www.facebook.com/cmd368");
     a.setAttribute("ref", "nofollow");
-    a.setAttribute("title", "Nha Cai CMD368");
-    a.innerHTML = "CMD368"
+    a.setAttribute("title", "cmd368");
+    a.innerHTML = "cmd368"
 }
